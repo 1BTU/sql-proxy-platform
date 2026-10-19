@@ -1,0 +1,46 @@
+# Git
+.git
+.gitignore
+
+# IDE
+.idea
+.vscode
+*.iml
+
+# Maven
+target/*
+!target/dm-database-api-1.0.0.jar
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (如果有)
+node_modules/
+frontend/node_modules/
+frontend/dist/
+release/
+data/
+npm-debug.log
+yarn-error.log
+
+# Docker
+docker-compose.yml
+.docker/
+
+# 其他
+*.md
+!.mvn/wrapper/maven-wrapper.jar

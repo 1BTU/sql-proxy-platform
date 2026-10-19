@@ -1,0 +1,31 @@
+server:
+  port: 3000
+  servlet:
+    session:
+      timeout: 8h
+      cookie:
+        http-only: true
+        same-site: strict
+
+spring:
+  datasource:
+    url: jdbc:sqlite:${APP_DATA_DIR:./data}/sql-proxy.db
+    driver-class-name: org.sqlite.JDBC
+    hikari:
+      maximum-pool-size: 1
+      connection-timeout: 10000
+  sql:
+    init:
+      mode: always
+
+logging:
+  level:
+    com.example.dmdatabaseapi: INFO
+    org.springframework.jdbc: WARN
+    com.zaxxer.hikari: WARN
+
+app:
+  encryption-key: ${APP_ENCRYPTION_KEY:}
+  admin:
+    username: ${ADMIN_INITIAL_USERNAME:admin}
+    password: ${ADMIN_INITIAL_PASSWORD:Admin@123456}

@@ -1,0 +1,9 @@
+server:
+  forward-headers-strategy: framework
+  servlet:
+    session:
+      cookie:
+        secure: false
+
+# 若平台由 HTTPS 反向代理提供服务，建议将 secure 改为 true。
+# 数据库账号必须在目标数据库中授予只读权限。

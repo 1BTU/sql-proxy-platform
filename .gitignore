@@ -1,0 +1,32 @@
+# Build outputs and dependency caches
+target/
+node_modules/
+frontend/dist/
+src/main/resources/static/
+release/
+repo/
+
+# Deployment state and credentials
+data/
+secrets.env
+.env
+.env.*
+!.env.example
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+*.tar
+*.tar.gz
+*.pem
+*.key
+
+# Local tooling and logs
+.idea/
+.vscode/
+*.iml
+*.log
+logs/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,12 @@
+services:
+  sql-proxy:
+    image: sql-proxy-platform:v1.0.0
+    container_name: sql-proxy-platform
+    env_file:
+      - secrets.env
+    ports:
+      - "3001:3000"
+    volumes:
+      - ./data:/app/data
+      - ./config:/app/config:ro
+    restart: always
