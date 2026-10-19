@@ -23,6 +23,8 @@ secrets.env
 *.key
 
 # Local tooling and logs
+.playwright-cli/
+output/
 .idea/
 .vscode/
 *.iml
